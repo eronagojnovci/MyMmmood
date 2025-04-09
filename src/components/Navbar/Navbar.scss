@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 15px;
+  background-color: rgba(255, 248, 251, 0.7); /* Transparent background with slight opacity */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  backdrop-filter: blur(10px); /* Optional: adds a blur effect behind the navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for better visibility */
+}
+
+.navbar-title {
+  color: rgb(123, 96, 86);
+  font-size: 32px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 30px;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInText 0.8s ease-out forwards;
+}
+
+.navbar-logo {
+  margin: 0;
+  margin-bottom: -10px;
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  margin-right: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: rgb(123, 96, 86);
+  font-weight: bold;
+}
+
+.navbar-link:hover {
+  color: #603720;
+}
+
+@keyframes slideInText {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

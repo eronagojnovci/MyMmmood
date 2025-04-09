@@ -1,0 +1,50 @@
+.header {
+    position: relative;
+    width: 100%;
+}
+.mymood {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.header-text {
+    position: absolute;
+    bottom: 40%;
+    left: 5%; 
+    text-align: left; 
+    color: rgb(123, 96, 86); 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-text h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* Button.css */
+.custom-btn {
+    background-color: rgba(195, 139, 93, 0.7) !important;
+    color: white !important; 
+    border: none;
+    border-radius: 8px;
+    padding: 20px 20px;
+    font-size: 1.2rem;
+    gap: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-btn:hover {
+    background-color: rgba(136, 87, 75, 0.7) !important; /* Darker brown with transparency for hover */
+  }
+  

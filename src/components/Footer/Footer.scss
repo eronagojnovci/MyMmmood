@@ -1,0 +1,32 @@
+.footer {
+    background-color: #f4e1c1; /* Light beige */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    color: #6b4f1f; /* Brownish color */
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: #6b4f1f; /* Brownish color */
+    font-weight: bold;
+    margin: 0 15px;
+  }
+  
+  .footer-link:hover {
+    color: #007bff; /* Change to blue on hover */
+  }
+  
